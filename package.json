@@ -1,0 +1,19 @@
+{
+  "name": "goodreads",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "login" : "npx playwright test tests/Login_functionality.spec.js",
+    "logout" :  "npx playwright test tests/logout_functionality.spec.js",
+    "markingTheBook" : "npx playwright test tests/markingBook_functionality.spec.js",
+    "searchBooks" : "npx playwright test tests/search_functionality.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2"
+  }
+}
