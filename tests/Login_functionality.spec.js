@@ -17,7 +17,7 @@ test("Verify that a user can log in to Goodreads with valid credentials", async(
     await expect(loginPageObj.userProfileIcon).toBeVisible()
 })
 
-test.only("Verify the error message displayed when entering invalid credentials", async({page})=>{
+test("Verify the error message displayed when entering invalid credentials", async({page})=>{
   await login(page, testData.invalidCredentials.email, testData.invalidCredentials.password)
   const PageObjectManagerObj = new pageObjectManager(page)
   const loginPageObj = PageObjectManagerObj.getLoginPage()
